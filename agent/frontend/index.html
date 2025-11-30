@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>LiveKit AI Agent — Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 16px }
+    #chat { height: 300px; overflow: auto; border: 1px solid #ddd; padding: 8px }
+    #localVideo, #remoteVideo { width: 320px; height: 240px; background: #000 }
+  </style>
+</head>
+<body>
+  <h1>LiveKit AI Agent — Demo (Advanced)</h1>
+  <label>Room name: <input id="room" value="ai-room" /></label>
+  <label>Identity: <input id="identity" value="student-1" /></label>
+  <button id="join">Join Room</button>
+
+  <h2>Video</h2>
+  <video id="localVideo" autoplay muted playsinline></video>
+  <video id="remoteVideo" autoplay playsinline></video>
+
+  <h2>AI Chat</h2>
+  <div id="chat"></div>
+  <input id="message" placeholder="Type message or press speak" style="width:60%" />
+  <button id="send">Send</button>
+  <button id="speak">Speak (browser ASR)</button>
+
+  <script src="client.js"></script>
+</body>
+</html>
